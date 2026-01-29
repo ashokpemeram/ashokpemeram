@@ -21,7 +21,7 @@ const Experience = () => {
         "Collaborating with the design and engineering teams to translate research findings into actionable insights."
       ],
       skills: "React, Node.js, Hardware Research",
-      logo: "src/assets/stratosfy.png",
+      logo: "public/stratosfy.png",
       id: 1
     },
     {
@@ -38,7 +38,7 @@ const Experience = () => {
         "Implemented thorough unit and integration testing to maintain codebase stability and reliability."
       ],
       skills: "MERN Stack, Express.js, MongoDB, Unit Testing",
-      logo: "src/assets/synxa.png",
+      logo: "public/synxa.png",
       id: 2
     }
   ];

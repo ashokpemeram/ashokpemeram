@@ -6,7 +6,7 @@ const Hero = () => {
     <section id="home" className="hero-section">
       {/* Cover Banner */}
       <div className="cover-banner">
-        <img src="src/assets/banner.png" alt="Profile" width={"100%"} height={200} />
+        <img src="public/banner.png" alt="Profile" width={"100%"} height={200} />
       </div>
 
       <div className="container">
@@ -19,7 +19,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="profile-photo">
-              <img src="src/assets/pic.png" alt="Profile" width={160} height={160} />
+              <img src="public/pic.png" alt="Profile" width={160} height={160} />
             </div>
           </motion.div>
 
@@ -50,11 +50,11 @@ const Hero = () => {
 
             {/* Action Buttons */}
             <div className="hero-actions">
-              <a href="/contact" className="btn btn-primary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px' }}>
+              <a href="/contact" className="btn btn-primary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px', color: 'white' }}>
                 <MessageCircle className="icon" size={12} />
                 Contact Me
               </a>
-              <a href="/resume.pdf" download className="btn btn-secondary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px' }}>
+              <a href="/resume.pdf" download className="btn btn-secondary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px', hover: 'bg-primary-blue' }}>
                 <Download className="icon" size={12} />
                 Download Resume
               </a>

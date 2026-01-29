@@ -9,8 +9,8 @@ const Projects = () => {
       description: "Build a Portfolio website for myself, which showcase my skills, projects and previous experiences. The platform features a clean, responsive design inspired by professional networking sites, emphasizing user experience and technical proficiency.",
       skills: "React.js, JavaScript, Framer Motion, and CSS3",
       media: [
-        { id: 1, type: 'image', hasLink: false, thumbnail: "src/assets/banner.png" },
-        { id: 2, type: 'image', hasLink: true, thumbnail: "src/assets/pic.png" }
+        { id: 1, type: 'image', hasLink: false, thumbnail: "public/banner.png" },
+        { id: 2, type: 'image', hasLink: true, thumbnail: "public/pic.png" }
       ]
     },
     {
@@ -37,7 +37,7 @@ const Projects = () => {
       description: "A comprehensive healthcare companion app featuring fitness tracking, medication reminders, and secure tele-health consultation portals for patients and doctors.",
       skills: "React Native, Firebase, and Redux Toolkit",
       media: [
-        { id: 5, type: 'image', hasLink: true, thumbnail: "src/assets/pic.png" }
+        { id: 5, type: 'image', hasLink: true, thumbnail: "public/pic.png" }
       ]
     },
     {

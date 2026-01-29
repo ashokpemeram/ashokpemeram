@@ -162,8 +162,8 @@ const Contact = () => {
                     </div>
                     <div className="info-content">
                       <h4>GitHub</h4>
-                      <a href="https://github.com/ashokpemeram" target="_blank" rel="noopener noreferrer">
-                        github.com/ashokpemeram
+                      <a href="https://github.com/ashokq" target="_blank" rel="noopener noreferrer">
+                        github.com/ashokq
                       </a>
                     </div>
                   </div>

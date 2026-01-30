@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import pic from "../../public/pic.png"
+import pic from "../../public/pic.png";
+import banner from "../../public/banner.png";
 import { MapPin, Mail, Github, Linkedin, Download, MessageCircle, Briefcase } from 'lucide-react';
 
 const Hero = () => {
@@ -7,7 +8,7 @@ const Hero = () => {
     <section id="home" className="hero-section">
       {/* Cover Banner */}
       <div className="cover-banner">
-        <img src="public/banner.png" alt="Profile" width={"100%"} height={200} />
+        <img src={banner} alt="Profile" width={"100%"} height={200} />
       </div>
 
       <div className="container">

@@ -1,9 +1,11 @@
 import { GraduationCap, Pencil, Plus } from 'lucide-react';
+import GPREC from "../../public/GPREC.jpg";
+import SVGP from "../../public/SVGP.jfif";
 
 const Education = () => {
   const educationData = [
     {
-      logo: "public/GPREC.jpg",
+      logo: GPREC,
       institution: "G.Pulla Reddy Engineering College",
       degree: "Bachelor of Technology - BTech, Computer Science",
       duration: "Aug 2023 - April 2026",
@@ -16,7 +18,7 @@ const Education = () => {
       id: 1
     },
     {
-      logo: "public/SVGP.jfif",
+      logo: SVGP,
       institution: "Sri Venkateswara Govt Polytechnic College",
       degree: "Diploma in Computer Engineering",
       duration: "Dec 2020 - May 2023",

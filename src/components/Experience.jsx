@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { ArrowLeft, Plus, Pencil, Briefcase } from 'lucide-react';
+import stratosfy from "../../public/stratosfy.png";
+import synxa from "../../public/synxa.png";
 
 const Experience = () => {
   const ref = useRef(null);
@@ -21,7 +23,7 @@ const Experience = () => {
         "Collaborating with the design and engineering teams to translate research findings into actionable insights."
       ],
       skills: "React, Node.js, Hardware Research",
-      logo: "public/stratosfy.png",
+      logo: stratosfy,
       id: 1
     },
     {
@@ -38,7 +40,7 @@ const Experience = () => {
         "Implemented thorough unit and integration testing to maintain codebase stability and reliability."
       ],
       skills: "MERN Stack, Express.js, MongoDB, Unit Testing",
-      logo: "public/synxa.png",
+      logo: synxa,
       id: 2
     }
   ];

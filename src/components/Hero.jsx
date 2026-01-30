@@ -57,7 +57,7 @@ const Hero = () => {
                 <MessageCircle className="icon" size={12} />
                 Contact Me
               </Link>
-              <a href="/resume.pdf" download className="btn btn-secondary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px', hover: 'bg-primary-blue' }}>
+              <a href="/public/resume.pdf" download className="btn btn-secondary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px', hover: 'bg-primary-blue' }}>
                 <Download className="icon" size={12} />
                 Download Resume
               </a>

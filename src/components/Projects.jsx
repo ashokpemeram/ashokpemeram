@@ -303,9 +303,13 @@ const Projects = () => {
           .projects-content {
             padding: 0 16px;
           }
+          .media-grid {
+            justify-content: center;
+          }
           .media-frame {
-            width: 120px;
-            height: 70px;
+            width: calc(50% - 6px);
+            min-width: 130px;
+            height: 90px;
           }
         }
       `}</style>

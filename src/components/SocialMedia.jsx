@@ -40,7 +40,7 @@ const SocialMedia = () => {
     ];
 
     return (
-        <section id="social-media" style={{ marginBottom: "1rem" }}>
+        <section id="social-media" style={{}}>
             <div className="card social-card" style={{ padding: '0' }}>
                 {socialItems.map((item, index) => (
                     <div key={index}>

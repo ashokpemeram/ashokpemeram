@@ -7,24 +7,69 @@ import Contact from '../components/Contact'
 import SocialMedia from '../components/SocialMedia'
 import Experience from '../components/Experience'
 import Skills from '../components/Skills'
+import useIsMobile from '../components/IsMobile'
 
 const Home = () => {
+    const isMobile = useIsMobile();
     return (
-        <div>
-            <div className="app" style={{ display: 'flex', flexDirection: 'row', width: '100%', paddingTop: '1rem', gap: '1rem' }}>
-                <div style={{ minHeight: '100vh', height: 'auto', width: '70%', marginLeft: '8%', borderRadius: '10px' }}>
+        <div className="page-container">
+            <div className="app-layout">
+                <main className="main-content">
                     <Hero />
                     <About />
                     <Projects />
+                </main>
+                <aside className="side-content">
+                    {isMobile ? <>
+                        <Skills />
+                        <Experience />
+                        <Education />
+                        <SocialMedia />
+                    </> : (
+                        <><SocialMedia />
+                            <Experience />
+                            <Skills />
+                            <Education /></>
+                    )}
 
-                </div>
-                <div style={{ height: 'auto', width: '30%', marginRight: '8%', borderRadius: '10px' }}>
-                    <SocialMedia />
-                    <Experience />
-                    <Skills />
-                    <Education />
-                </div>
+                </aside>
             </div>
+
+            <style jsx>{`
+                .app-layout {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 24px;
+                    align-items: flex-start;
+                }
+
+                .main-content {
+                    flex: 7;
+                    min-width: 0;
+                }
+
+                .side-content {
+                    flex: 3;
+                    display: flex;
+                    flex-direction: column;
+
+                }
+
+                @media (max-width: 1024px) {
+                    .app-layout {
+                        flex-direction: column;
+                    }
+
+                    .main-content, .side-content {
+                        width: 100%;
+                        flex: none;
+                    }
+
+                    .home-container {
+                        padding: 1rem 16px;
+                    }
+                }
+            `}</style>
         </div>
     )
 }

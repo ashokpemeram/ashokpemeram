@@ -80,6 +80,9 @@ Beyond development, I have a keen interest in AI & ML, always seeking to expand 
         }
 
         @media (max-width: 768px) {
+          .card {
+            padding: 16px;
+          }
           .about-intro {
             font-size: 1rem;
           }

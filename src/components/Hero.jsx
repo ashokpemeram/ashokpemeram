@@ -3,14 +3,16 @@ import pic from "../../public/pic.png";
 import resume from "../../public/Ashok_Pemeram.pdf";
 import banner from "../../public/banner.png";
 import { Link } from 'react-router-dom';
+import useIsMobile from './IsMobile';
 import { MapPin, Mail, Github, Linkedin, Download, MessageCircle, Briefcase } from 'lucide-react';
 
 const Hero = () => {
+  const isMobile = useIsMobile();
   return (
     <section id="home" className="hero-section">
       {/* Cover Banner */}
       <div className="cover-banner">
-        <img src={banner} alt="Profile" width={"100%"} height={200} />
+        <img src={banner} alt="Profile" width={"100%"} height={isMobile ? 150 : 200} />
       </div>
 
       <div className="container">
@@ -23,7 +25,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="profile-photo">
-              <img src={pic} alt="Profile" width={160} height={160} />
+              <img src={pic} alt="Profile" width={isMobile ? 130 : 160} height={isMobile ? 130 : 160} />
             </div>
           </motion.div>
 
@@ -54,15 +56,15 @@ const Hero = () => {
 
             {/* Action Buttons */}
             <div className="hero-actions">
-              <Link to="/contact" className="btn btn-primary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px', color: 'white' }}>
-                <MessageCircle className="icon" size={12} />
+              <Link to="/contact" className="btn btn-primary hero-btn">
+                <MessageCircle className="icon" size={16} />
                 Contact Me
               </Link>
-              <a href={resume} download className="btn btn-secondary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px', hover: 'bg-primary-blue' }}>
-                <Download className="icon" size={12} />
+              <a href={resume} download className="btn btn-secondary hero-btn">
+                <Download className="icon" size={16} />
                 Download Resume
               </a>
-              <a href="#projects" className="btn btn-white" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px' }}>
+              <a href="#projects" className="btn btn-white hero-btn">
                 View Projects
               </a>
             </div>
@@ -175,35 +177,68 @@ const Hero = () => {
           flex-wrap: wrap;
         }
 
+        .hero-btn {
+          height: 36px;
+          padding: 0 16px;
+          border-radius: 18px;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          white-space: nowrap;
+        }
+
+        .btn-primary {
+          background: #0a66c2;
+          color: white;
+          border: none;
+        }
+
+        .btn-secondary {
+          border: 1px solid #0a66c2;
+          color: #0a66c2;
+          background: transparent;
+        }
+
+        .btn-white {
+          border: 1px solid #666;
+          color: #666;
+          background: transparent;
+        }
+
         @media (max-width: 768px) {
           .cover-banner {
-            height: 150px;
+            height: 140px;
           }
 
           .profile-photo {
-            width: 120px;
-            height: 120px;
+            width: 130px;
+            height: 130px;
+            border-width: 4px;
           }
 
           .profile-photo-wrapper {
-            margin-top: -60px;
+            margin-top: -65px;
           }
 
           .hero-name {
-            font-size: 2rem;
+            font-size: 1.75rem;
           }
 
           .hero-headline {
-            font-size: 1rem;
+            font-size: 0.95rem;
           }
 
           .hero-actions {
             flex-direction: column;
+            gap: 12px;
           }
 
-          .hero-actions .btn {
+          .hero-btn {
             width: 100%;
-            justify-content: center;
+            height: 42px;
+            font-size: 15px;
           }
         }
       `}</style>

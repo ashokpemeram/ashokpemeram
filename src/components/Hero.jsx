@@ -52,10 +52,10 @@ const Hero = () => {
 
             {/* Action Buttons */}
             <div className="hero-actions">
-              <a href="/contact" className="btn btn-primary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px', color: 'white' }}>
+              <button onClick={() => window.location.href = "/contact"} className="btn btn-primary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px', color: 'white' }}>
                 <MessageCircle className="icon" size={12} />
                 Contact Me
-              </a>
+              </button>
               <a href="/resume.pdf" download className="btn btn-secondary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px', hover: 'bg-primary-blue' }}>
                 <Download className="icon" size={12} />
                 Download Resume

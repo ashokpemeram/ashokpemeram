@@ -33,7 +33,7 @@ const Navbar = () => {
             </div>
           </Link>
           <div className="search-bar">
-            <h2 style={{ fontSize: '16px', color: '#000' }}>Ashok Pemeram</h2>
+            <h2 style={{ fontSize: '18px', color: '#000' }}>Ashok Pemeram</h2>
           </div>
         </div>
 
@@ -101,14 +101,13 @@ const Navbar = () => {
         }
 
         .search-bar {
-          background: #edf3f8;
+          // background: #edf3f8;
           height: 34px;
           width: 280px;
           border-radius: 4px;
           display: flex;
           align-items: center;
-          padding: 0 8px;
-          gap: 8px;
+          padding-top: 15px;
         }
 
         .search-icon {

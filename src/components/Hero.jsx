@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import pic from "../../public/pic.png";
 import banner from "../../public/banner.png";
+import { Link } from 'react-router-dom';
 import { MapPin, Mail, Github, Linkedin, Download, MessageCircle, Briefcase } from 'lucide-react';
 
 const Hero = () => {
@@ -52,10 +53,10 @@ const Hero = () => {
 
             {/* Action Buttons */}
             <div className="hero-actions">
-              <button onClick={() => window.location.href = "/contact"} className="btn btn-primary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px', color: 'white' }}>
+              <Link to="/contact" className="btn btn-primary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px', color: 'white' }}>
                 <MessageCircle className="icon" size={12} />
                 Contact Me
-              </button>
+              </Link>
               <a href="/resume.pdf" download className="btn btn-secondary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px', hover: 'bg-primary-blue' }}>
                 <Download className="icon" size={12} />
                 Download Resume

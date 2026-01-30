@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import pic from "../../public/pic.png"
 import { MapPin, Mail, Github, Linkedin, Download, MessageCircle, Briefcase } from 'lucide-react';
 
 const Hero = () => {
@@ -19,7 +20,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="profile-photo">
-              <img src="../public/pic.png" alt="Profile" width={160} height={160} />
+              <img src={pic} alt="Profile" width={160} height={160} />
             </div>
           </motion.div>
 

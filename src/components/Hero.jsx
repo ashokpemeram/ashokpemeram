@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import pic from "../../public/pic.png";
+import resume from "../../public/Ashok_Pemeram.pdf";
 import banner from "../../public/banner.png";
 import { Link } from 'react-router-dom';
 import { MapPin, Mail, Github, Linkedin, Download, MessageCircle, Briefcase } from 'lucide-react';
@@ -57,7 +58,7 @@ const Hero = () => {
                 <MessageCircle className="icon" size={12} />
                 Contact Me
               </Link>
-              <a href="/public/resume.pdf" download className="btn btn-secondary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px', hover: 'bg-primary-blue' }}>
+              <a href={resume} download className="btn btn-secondary" style={{ height: "35px", padding: '1rem', borderRadius: '20px', fontSize: '14px', hover: 'bg-primary-blue' }}>
                 <Download className="icon" size={12} />
                 Download Resume
               </a>
